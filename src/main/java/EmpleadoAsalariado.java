@@ -1,10 +1,13 @@
 public class EmpleadoAsalariado extends Empleado {
-
-	public EmpleadoAsalariado(String nombre, int salarioBase) {
-		throw new UnsupportedOperationException();
+	public EmpleadoAsalariado(String nombre, String salarioBase) {
+		super(nombre, String.valueOf(salarioBase));
+	}
+	public String getTipo() {
+		return "Empleado Asalariado";
 	}
 
-	public static double calcularSalario() {
-		return getSalarioBase();
+	public String calcularSalario() {
+		double salario = Double.parseDouble(getSalarioBase());
+		return String.format("%.2f", salario);
 	}
 }

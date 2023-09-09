@@ -1,0 +1,3 @@
+Alexander,650000,00
+Paulo,700000,00
+Darwin,0.0
